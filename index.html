@@ -5,8 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakub Schwark Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb38cfd41a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="name">Jakub Schwark Portfolio</div>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills-h2">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-me">
+            <h2>Jakub Schwark, Frontend Developer</h2>
+            <h3>Welcom to my portfolio website!</h3>
+            <p>My name is Jakub. I'm 24. Currently I'm SAP MM keyuser.<br> Some time ago i decided to change my carrier and become a frontend developer.<br> After work i have spend my whole free time to leran HTML, CSS and JS and more.<br> I finished CodeCademy Front-End Engineer path where I've learnd a lot! You can check my certificate <a href="#certs">Here!</a><br> I have also learnd form other resources like books, documentations and youtube videos.<br> I've been working since I was 16! During this time I have learned that the key to success is hard work and w willingness to develop my skills.</p>
+        </div>
+        <div class="about-quote">
+            <img src="./images/stairs-quote.jpeg" alt="Stairs describing that hard work is essential in life">
+        </div>
+    </section>
+    <h2 id="projects-h2">Here Are My Recent Projects: </h2>
+    <section class="projects" id="projects">
+        <div class="project">
+            <h2><a href="#">Realestate Project</a></h2>
+            <a href="#"><img src="./images/realestate-proj.jpg" alt="One of the realestate website project"></a>
+        </div>
+        <div class="project">
+            <h2><a href="#">E-Cigarete Shop Project</a></h2>
+            <a href="#"><img src="./images/ecig-store" alt="One of the realestate website project"></a>
+        </div>
+        <div class="project">
+            <h2><a href="#">Netflix Clone Project</a></h2>
+            <a href="#"><img src="./images/netflix.jpg" alt="One of the realestate website project"></a>
+        </div>
+        <div class="project">
+            <h2><a href="#">Shoping list app</a></h2>
+            <a href="#"><img src="./images/shopping-list.jpg" alt="One of the realestate website project"></a>
+        </div>
+    </section>
+
+    <h2 id="skills-h2">Below You Can Find My Basic Skills And My Certificates: </h2>
+    <section class="skills">
+        <div class="skill">
+            <div class="left">
+                <div class="icon">
+                    <h3>HTML</h3>
+                    <i class="fab fa-html5 fa-xl"></i>
+                </div>
+                <div class="icon">
+                    <h3>CSS</h3>
+                    <i class="fa-brands fa-css3-alt fa-xl"></i>
+                </div>
+                <div class="icon">
+                    <h3>JavaScript</h3>
+                    <i class="fa-brands fa-js-square fa-xl"></i>
+                </div>
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <h3>React</h3>
+                    <i class="fa-brands fa-react fa-xl"></i>
+                </div>
+                <div class="icon">
+                    <h3>Git</h3>
+                    <i class="fa-brands fa-github fa-xl"></i>
+                </div>
+                <div class="icon">
+                    <h3>Unit Testing</h3>
+                    <i class="fa-solid fa-clipboard-check fa-xl"></i>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section class="certfyficates" id="certs">
+        <div class="certf">
+            <!--@@TODO zwięjkszenie certyfikatu kiedy najedziesz myszką-->
+            <div class="cert">
+                <h3>Front-End-Engineer<br> by CodeCademy</h3>
+                <img src="./images/cert1.jpg" alt="CodeCademy certificate">
+            </div>
+            <div class="cert">
+                <h3>Computational Thinking For Problem Solving<br> by University of Pennsylvania</h3>
+                <img src="./images/tmfpCALI.jpg" alt="University of Pennsylvania certificate">
+            </div>
+            <div class="cert">
+                <h3>Time Managment For Productivity<br> by University of California</h3>
+                <img src="./images/tmfpCALI.jpg" alt="University of California certificate">
+            </div>
+            <div class="cert">
+                <h3>Basics of Psyhology<br> by XYZ</h3>
+                <img src="./images/psyho-cert.jpg" alt="Basics of psyhology certificate">
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact" id="contact">
+
+        <div class="find-me-on">
+            <h5>Find Me On LikedIn: </h5>
+            <a href="https://www.linkedin.com/in/jakub-schwark-081933222/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+        </div>
+
+        <div class="find-me-on">
+            <h5>Find Me On GitHub: </h5>
+            <a href="https://github.com/Jakub-Schwark"><i class="fa-brands fa-github fa-xl"></i></a>
+        </div>
+
+        <div class="find-me-on">
+            <h5>Send me an email: </h5>
+            <a href="mailto:jakubschwark@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i></a>
+        </div>
+
+        <div class="find-me-on">
+            <h5>View my CV: </h5>
+            <a href="https://drive.google.com/file/d/10dqB492q4vePMKZkVe4Tvu9AtL7uydxU/view?usp=sharing"><i class="fa-solid fa-file fa-xl"></i></a>
+        </div>
+
+        <p id="cr">© Jakub Schwark</p>
+
+    </footer>
+
 </body>
 </html>

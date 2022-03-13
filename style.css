@@ -1,0 +1,177 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    color: black;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3e31b;
+}
+
+.name {
+    font-family: "Syne Mono", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+nav {
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex; 
+}
+
+nav ul li {
+    margin-left: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.about-me {
+    width: 50%;
+    text-align: center;
+}
+
+.about-quote {
+    text-align: center;
+    width: 50%;
+}
+
+.about-quote img {
+    max-width: 50%;
+    max-height: 400px;
+}
+
+.about-me p {
+    line-height: 1.5rem;
+}
+
+.about-me p a {
+    color: #fff;
+}
+
+.projects {
+    display: flex;
+}
+
+.project {
+    text-align: center;
+    padding: 10px;
+}
+
+.project a:hover {
+    color: #f3e31b;
+    transition: 0.5s;
+}
+
+.project img {
+    width: 100%;
+}
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f3e31b;
+}
+
+#skills-h2, #projects-h2 {
+    text-align: center;
+}
+
+.skill {
+    display: flex;
+}
+
+.left, .right {
+    padding: 40px;
+}
+
+.icon h3 {
+    font-size: 1rem;
+}
+.icon {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.certf {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.certf h3 {
+    font-size: 0.9rem;
+}
+
+.cert {
+    margin-left: 2rem;
+}
+
+.cert img {
+    width: 200px;
+    transition: all .2s ease-in-out; 
+}
+
+.cert img:hover { 
+    	transform: scale(2); 
+}
+
+footer {
+    padding: 1rem;
+    background-color: #f3e31b;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    justify-items: flex-start;
+}
+.find-me-on {
+    display: flex;
+    margin-left: 1rem;
+}
+.contact i {
+    font-size: 2rem;
+    margin-top: 1.8rem;
+    margin-left: 0.5rem;
+}
+
+footer p {
+    font-size: 0.7rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
