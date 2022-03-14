@@ -47,6 +47,15 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+@media only screen and (max-width: 480px) {
+    .name {
+        font-size: 0.9rem;
+    }
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+}
+
 .about {
     display: flex;
     justify-content: space-around;
@@ -55,9 +64,18 @@ nav ul li a:hover {
     color: #fff;
 }
 
+@media only screen and (max-width: 950px) {
+    .about-quote {
+        display: none;
+    }
+}
+
 .about-me {
     width: 50%;
-    text-align: center;
+    text-align: left;
+    border: solid 2px #fff;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 .about-quote {
@@ -74,13 +92,24 @@ nav ul li a:hover {
     line-height: 1.5rem;
 }
 
-.about-me p a {
+.about-me p a, .about-me h4 a {
     color: #fff;
 }
 
 .projects {
     display: flex;
 }
+
+@media only screen and (max-width: 950px) {
+    .projects {
+        flex-direction: column;
+    }
+    .project img {
+        border: solid 1px #000;
+        border-radius: 3px;
+    }
+}
+
 
 .project {
     text-align: center;
@@ -104,6 +133,8 @@ nav ul li a:hover {
     background-color: #f3e31b;
 }
 
+
+
 #skills-h2, #projects-h2 {
     text-align: center;
 }
@@ -112,9 +143,10 @@ nav ul li a:hover {
     display: flex;
 }
 
-.left, .right {
+.left, .right, .middle {
     padding: 40px;
 }
+
 
 .icon h3 {
     font-size: 1rem;
@@ -124,10 +156,33 @@ nav ul li a:hover {
     text-align: center;
 }
 
+@media only screen and (max-width: 480px) {
+    .left, .right, .middle {
+        padding: 20px;
+    }
+    .icon h3 {
+        font-size: 0.7rem;
+    }
+    .icon {
+        font-size: 1.2rem;
+    }
+}
+
 .certf {
     display: flex;
     justify-content: space-evenly;
     padding: 1rem;
+}
+
+@media only screen and (max-width: 950px) {
+    .certf {
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .cert {
+        width: 250px;
+    }
 }
 
 .certf h3 {
@@ -145,6 +200,12 @@ nav ul li a:hover {
 
 .cert img:hover { 
     	transform: scale(2); 
+}
+
+@media only screen and (max-width: 480px) {
+    .cert img:hover { 
+    	transform: scale(1.5); 
+    }
 }
 
 footer {
@@ -174,4 +235,35 @@ footer p {
     font-size: 0.7rem;
     margin-left: 5rem;
     margin-top: 2rem;
+}
+
+@media only screen and (max-width: 670px) {
+    
+    .contact h5 {
+        font-size: 0.7rem;
+    }
+    .contact i {
+        font-size: 1.5rem;
+    }
+
+    #cr {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact h5 {
+        display: none;
+    }
+    .contact i {
+        font-size: 2rem;
+        margin-left: -10px;
+        margin-top: 15px;
+    }
+    .contact {
+        justify-content: space-around;
+    }
+    footer {
+        padding: 0.5rem;
+    }
 }
