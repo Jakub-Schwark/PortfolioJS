@@ -17,6 +17,8 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #f3e31b;
+    position: sticky;
+    top: 0px;
 }
 
 .name {
@@ -47,12 +49,32 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
+.js-logo {
+    display: none;
+    font-size: 2rem;
+    padding: 10px;
+    height: 30px;
+}
+
 @media only screen and (max-width: 480px) {
+    header {
+        
+    }
     .name {
-        font-size: 0.9rem;
+        display: none;
+    }
+    nav {
+        padding: 10px;
+        height: 30px;
+    }
+    .nav-links {
+        margin-top: -10px;
     }
     nav ul li a {
         font-size: 0.8rem;
+    }
+    .js-logo {
+        display: block;
     }
 }
 
@@ -96,6 +118,35 @@ nav ul li a:hover {
     color: #fff;
 }
 
+#show-more-button {
+    display: none;
+    background-color: #f3e31b;
+    padding: 5px;
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 820px) {
+    #about-hide {
+        display: none;
+    }
+    #show-more-button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-me {
+        width: 100%;
+    }
+    #about-hide {
+        display: none;
+    }
+    #show-more-button {
+        display: block;
+    }
+}
+
 .projects {
     display: flex;
 }
@@ -137,6 +188,15 @@ nav ul li a:hover {
 
 #skills-h2, #projects-h2 {
     text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    #skills-h2, #projects-h2 {
+        font-size: 1.1em;
+    }
+    .project a {
+        font-size: 1.3rem;
+    }
 }
 
 .skill {
